@@ -1,1 +1,246 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f3f3f3;
+    margin: 0;
+}
 
+header, nav, section, footer {
+    padding: 20px;
+}
+
+#home {
+    background-image: url('images/lemon_cupcakes.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    align-items: left;
+    text-align: left;
+    font-weight: 400;
+    color: #f3f3f3;
+    padding-left: 5%;
+    padding-right: 30%;
+}
+
+#home h1, #home .round-button {
+    margin: 20px 0; /* Adds space above and below the h1 and button */
+}
+
+/* button */
+.round-button {
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 45px;
+    padding: 10px 40px; 
+    border: 1.5px solid white;
+    color: #efe2e2;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all .3s;
+    align-items: center;
+}
+
+.round-button:hover {
+    background-color: #f0687f;
+    color: #efe2e2;
+}
+
+.order-button {
+    background-color: rgb(246, 228, 231); /* Light Salmon */
+    color: #f0687f; /* White */
+    border-color: #f0687f; /* Light Salmon */
+}
+
+.order-button:hover {
+    background-color: #f0687f; /* Coral */
+    color: #FFFFFF; /* White */
+    border-color: #f0687f; /* Coral */
+}
+
+
+/* nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+nav .logo {
+    margin-left: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    color: #f0687f;
+    cursor: pointer;
+}
+
+/* logo */
+.logo-container {
+    display: flex;
+    align-items: center; 
+}
+
+.logo {
+    display: flex;
+    align-items: center; 
+    text-decoration: none;
+}
+
+.logo img {
+    display: block; 
+}
+
+.logo-text {
+    margin-left: 10px; 
+    color: #f0687f; 
+    font-size: 1.8em; 
+    font-weight: bold; 
+    font-family: "Pattaya", sans-serif;;
+}
+
+/* section */
+section {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; 
+    padding: 20px;
+}
+
+section img {
+    height: 100%; 
+    width: 200px;
+    object-fit: cover; 
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    margin-top: 1%;
+}
+
+
+.cupcake-item {
+    flex: 1; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 14px;
+    text-align: center;
+    background-color: #F9E79F;
+    margin: 0 10px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+}
+
+.cupcake-item img {
+    width: 330px;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cupcake-item p {
+    margin-top: 10px; /* Adds a little space between the image and its name */
+    font-size: 1.3em; /* Adjusts the font size for the cupcake names */
+    font-family: 'Pattaya', sans-serif;
+}
+
+#cupcakes {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    margin-top: 1%;
+  }
+  
+  .cupcake-item {
+    flex: 1; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 14px;
+    text-align: center;
+    background-color: #edc3c3;
+    margin: 0 6px;
+    margin-bottom: 13px;
+
+  }
+
+
+/* text */
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h1, h2 {
+    font-family: 'Pattaya', sans-serif;
+}
+
+h1{
+    font-size: 4.8em;
+    color: #f0687f;
+}
+
+h2{
+    font-size: 2.8em;
+    color: #f0687f;
+}
+
+h3{
+    font-size: 1.6em;
+}
+
+p{
+    font-size: 1.2em;;
+}
+
+/* footer */
+.footer {
+    background-color: #edc3c3;
+    color: #f3f3f3;
+    text-align: left;
+    position: relative;
+    bottom: 0;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-top: 100px;
+    padding: 40px;
+}
+
+@media (max-width: 768px) and (min-width: 320px){
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .image-gallery {
+        flex-direction: column;
+        margin-top: 6%; 
+        margin-bottom: 1%; 
+      }
+    
+      .cupcake-item {
+        margin: 10px 0;
+        margin-top: 10px;
+        margin-bottom: 10px; 
+  
+      }
+}
