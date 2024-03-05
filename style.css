@@ -34,8 +34,8 @@ header, nav, section, footer {
     box-sizing: border-box;
     border-radius: 45px;
     padding: 10px 40px; 
-    border: 1.5px solid white;
-    color: #efe2e2;
+    border: 1.5px solid #f0687f;
+    color: #f0687f;
     font-size: 20px;
     text-decoration: none;
     transition: all .3s;
@@ -203,37 +203,8 @@ p{
     line-height: 1.8;
     margin-top: 100px;
     padding: 40px;
+    color: #f0687f;
 }
-
-.newsletter-signup {
-    text-align: center;
-    padding: 20px;
-}
-
-.newsletter-signup form {
-    margin-top: 10px;
-}
-
-.newsletter-signup input[type="email"] {
-    padding: 10px;
-    margin-right: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.newsletter-signup button {
-    padding: 10px 20px;
-    background-color: #f0687f;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.newsletter-signup button:hover {
-    background-color: #edc3c3;
-}
-
 
 @media (max-width: 768px) and (min-width: 320px){
     nav ul li {
